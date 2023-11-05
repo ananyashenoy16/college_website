@@ -220,3 +220,92 @@ background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, F
    background-color:black;
    color:white;
 }
+
+/* Testimonial */
+.testimonial{
+    background-color: #fafaf9;
+    height: 747px;
+    width: 100%;
+    position: sticky;
+    top: 100px;
+}
+.testimonial h1{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+    color: black;
+}
+.slide-row{
+    display: flex;
+    width: 3200px;
+    transition: 0.5s;
+}
+.slide-col{
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+.user-img{
+    position: absolute;
+    top: 32%;
+    right: 0;
+    height: 100%;
+}
+.user-img img{
+    height: 100%;
+    border-radius: 10px;
+}
+.user-text{
+    background: #383737;
+    width: 520px;
+    height: 270px;
+    position: absolute;
+    right:0;
+    top:50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    color: #fefcfc;
+    padding: 45px;
+    z-index: 2;
+    box-sizing: border-box;
+}
+.user-text p{
+    font-size: 18px;
+    line-height: 24px;
+}
+.user-text h3{
+    margin: 35px 0 5px;
+    color: white;
+}
+.placecontainer{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.placecontainer .indicator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:600px;
+    height: 20px;
+}
+.placecontainer .indicator .btn{
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    margin: 4px;
+    border-radius: 15px;
+    background: #b6a6a6;
+    cursor: pointer;
+    transition: 0.5s;
+    /* z-index: 3; */
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
