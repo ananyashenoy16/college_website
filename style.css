@@ -109,3 +109,43 @@ header.sticky{
     background: #262626;
     color:white;
 }
+
+/* Ourdesk Starts */
+.ourdesk{
+    height: 747px;
+    /* background-image: url("ourdeskbackground.jpg"); */
+    background: #a8c0ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: sticky;  
+    top:100px;
+    padding: 50px;
+    text-align: center;
+}
+.deskbox{
+    margin: 100px;
+    display: flex;
+    justify-content:center;
+    gap: 100px;
+}
+.desk{
+    height: 300px;
+    border: none;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    background-color: rgb(248, 245, 245);
+    /* padding: 10px; */
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:600;
+    
+}
+.president{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    height: 70%;
+}
