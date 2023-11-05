@@ -308,5 +308,165 @@
     </div>
 </div>
 
+  <!--Statistics  -->
+  <div class="statistics" id="statistics">
+    <h1>Statistics</h1>
+    <div class="counter">
+        <div class="countheading">
+            <i class="fa-solid fa-graduation-cap" style="color:#ffffff;"></i>
+            <div class="count" max-data="352">1</div>
+            <h2>Students placed</h2>
+        </div>
+        <div class="countheading">
+            <i class="fa-solid fa-briefcase" style="color: #ffffff;"></i>
+            <div class="count" max-data="133">1</div>
+            <h2>Our Recruiters</h2>
+        </div>
+        <div class="countheading">
+            <i class="fa-solid fa-handshake" style="color:#ffffff;"></i>
+            <div class="count" max-data="440">1</div>
+            <h2>Total Offers</h2>
+        </div>
+        <div class="countheading">
+            <i class="fa-solid fa-laptop-code" style="color: #ffffff;"></i>
+            <div class="count" max-data="740">1</div>
+            <h2>Skill Enhancement Training</h2>
+        </div>
+    </div>
+</div>
+
+<!-- Other details -->
+<div class="otherdetails">
+    <div class="details">
+        <div class="contact">
+            <h1>Contact us</h1>
+            <p>CANARA ENGINEERING COLLEGE <br>
+                Benjanapadavu, Bantwal Taluk<br>
+                Mangaluru, D.K. District<br>
+                Karnataka, INDIA - 574219<br><br>
+                Phone : 8792727001 / 8792736001<br>
+                Fax : 0824-2278675<br>
+                Email : canarait@gmail.com</p><br>
+
+        </div>
+        <div class="downloads">
+            <h1>Downloads</h1>
+            <a href="#">Application Form</a><br>
+            <a href="#">College Bulletin</a><br>
+            <a href="#">College Brochure</a><br>
+            <a href="#">Calender</a><br>
+            <a href="#">IIPC</a><br>
+            <a href="#">VTU Circular</a><br>
+            <a href="#">CEC Website Policy</a><br>
+            <a href="#">B.E Application</a><br>
+            <a href="#">JRF Application</a><br>
+            <a href="#">DBook Store</a><br>
+        </div>
+
+        <div class="department">
+            <h1>DEPARTMENTS</h1>
+            <a href="#">Computer Science & Engineering</a><br>
+            <a href="#">Information Science Engineering</a><br>
+            <a href="#">Artificial Intelligence & Machine Learning</a><br>
+            <a href="#">Computer Science & Design</a><br>
+            <a href="#">computer Science & Business System</a><br>
+            <a href="#">Electronics & Communication Engineering</a><br>
+            <a href="#">Mechanical Engineering</a><br>
+            <a href="#">Science & Humanities</a><br>
+            <a href="#">Placement & Training</a><br>
+            <a href="#">Administration</a><br>
+        </div>
+        <div class="quicklinks">
+            <h1>Quick Links</h1>
+            <a href="#">Admissions</a><br>
+            <a href="#">Feeding</a><br>
+            <a href="#">NIRF</a><br>
+            <a href="#">Committee List</a><br>
+            <a href="#">Alumni</a><br>
+            <a href="#">Press Releases</a><br>
+            <a href="#">Grievance Redressal call</a><br>
+            <a href="#">VTU</a><br>
+            <a href="#">AICTE Feedback</a><br>
+            <a href="#">Vidyalakshmi</a><br>
+
+        </div>
+    </div>
+
+<!-- footer -->
+<div class="footer">
+<p>&#169 CEC & Canara High School Association Mangalore | All Rights Reserved |</p>
+</div>
+</div>
+
+<script>
+// TestimonialSlider
+var btn=document.getElementsByClassName("btn");
+var slide=document.getElementById("slide")
+btn[0].onclick=function(){
+slide.style.transform = 'translateX(0px)';
+for(i=0;i<4;i++){
+    btn[i].classList.remove("active")
+}
+this.classList.add("active")
+}
+btn[1].onclick=function(){
+slide.style.transform = 'translateX(-800px)';
+for(i=0;i<4;i++){
+    btn[i].classList.remove("active")
+}
+this.classList.add("active")
+}
+btn[2].onclick=function(){
+slide.style.transform = 'translateX(-1600px)';
+for(i=0;i<4;i++){
+    btn[i].classList.remove("active")
+}
+this.classList.add("active")
+}
+btn[3].onclick=function(){
+slide.style.transform = 'translateX(-2400px)';
+for(i=0;i<4;i++){
+    btn[i].classList.remove("active")
+}
+this.classList.add("active")
+}
+
+// StatScript
+var count = document.getElementsByClassName("count");
+var inc = [];
+function intervalFunc() {
+for (i = 0; i < count.length; i++) {
+    inc.push(1);
+    if (inc[i] != count[i].getAttribute("max-data")) {
+        inc[i]++;
+    }
+    count[i].innerHTML = inc[i];
+}
+}
+var main = document.getElementById("statistics");
+window.onscroll = function () {
+var timer= setInterval(() => {
+    var topElem = main.offsetTop;
+    var btmElem = main.offsetTop + main.clientHeight;
+    var topScreen = window.pageYOffset;
+    var btmScreen = window.pageYOffset + window.innerHeight;
+    if (btmScreen > topElem && topScreen < btmElem) {
+        intervalFunc();
+
+    }
+    else {
+        clearInterval(timer);
+        for (i = 0; i < count.length; i++) {
+            count[i].innerHTML =1;
+            inc=[];
+        }
+    }
+
+}, 100);
+
+}
+</script>
+
+
 </body>
 </html>
