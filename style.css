@@ -161,7 +161,7 @@ background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, F
    display: flex;
    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
    grid-gap:40px;
-   margin-top: 50px;
+   margin:50px auto;
   justify-content: center;
    
 }
