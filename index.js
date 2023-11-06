@@ -4,7 +4,7 @@
 
 // icon.addEventListener("click",()=>{
 //     ul.classList.toggle("show");
-//     console.log(ul);
+    // console.log(ul);
 // })
 
 // function hamburger(){
