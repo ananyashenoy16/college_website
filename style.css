@@ -192,23 +192,31 @@ header.sticky{
     .testimonial h1{
         font-size: 30px;
     }
-    .slide-col{
-        width: 500px;
-        height: 300px;
-        
-    }
-    .placecontainer{
-        width: 500px;
-        height: 300px;
 
-    }
-    /* .details{
+    .details{
         font-size: 10px;
-    } */
-   /* .usertext{
-    width: 330px;
-    height: 200px;
-   } */
+    }
+    .otherdetails .details h1{
+        font-size: 30px;
+    }
+    .statistics .counter .countheading h2{
+        font-size: 20px;
+    }
+    .statistics{
+        padding: 10px;
+    }
+
+    .user-img{
+       visibility: hidden;
+    }
+
+     .placecontainer .hero{
+        margin-left: 120px;
+     }
+     .otherdetails{
+        height:280px;
+        position: fixed;
+     }
 }
 @media (max-width:480px){
    .ourdesk .deskbox .desk{
@@ -258,7 +266,7 @@ header.sticky{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     width: 100%;
-    height: 70%;
+    height: 100%;
 
 }
 .collegedesk{
@@ -702,7 +710,6 @@ position: relative;
     background-color: lightblue ;
     height: 343px;
     width: 100%;
-    margin-bottom: 0;
     position:relative;
     /* top: 100px; */
 }
