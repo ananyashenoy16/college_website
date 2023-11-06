@@ -1,3 +1,20 @@
+// Hamburger
+// let icon = document.querySelector('.ham');
+// let ul =document.querySelector('ul');
+
+// icon.addEventListener("click",()=>{
+//     ul.classList.toggle("show");
+//     console.log(ul);
+// })
+
+// function hamburger(){
+
+// }
+// icon.addEventListener("click",()=>{
+//     ul.classList.toggle("showData");
+// })
+
+// Courses
 let loadMoreBtn =document.querySelector('#load-more');
         let currentItem=3;
     

@@ -97,7 +97,12 @@ nav ul li a{
     font-weight: bolder;
        
 }
+nav ul li a:hover{
+  text-decoration:underline;
+  color: white;
+}
 .banner{
+    right: 0;
     position:relative;
     width:100%;
     height: 100vh;
@@ -109,10 +114,45 @@ header.sticky{
     background: #262626;
     color:white;
 }
+.ham{
+    display: none;
+}
+@media only screen and (max-width:1240px){
+    nav ul{
+        display: none;
+    }
+    .ham{
+        display: flex;
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    
+}
+@media only screen and (max-width:770px){
+    .ourdesk .deskbox{
+        gap: 20px;
+        margin: 50px;
+
+    }
+   
+}
+@media only screen and (max-width:480px){
+   .ourdesk .deskbox .desk{
+    height:200px;
+    
+   }
+   .ourdesk .deskbox{
+    display: block;
+    
+   }
+
+}
+
 
 /* Ourdesk Starts */
 .ourdesk{
-    height: 747px;
+    height: 100vh;
+    width: 100%;
     /* background-image: url("ourdeskbackground.jpg"); */
     background:linear-gradient(45deg,#9CECFB,#65C7F7,#0052D4);
     position: sticky;  
@@ -317,7 +357,7 @@ header.sticky{
 }
 .card
 {   position: relative;
-     margin: 15px;
+    margin: 15px;
     width: 380px;
     border:none;
     border-radius: 10 px;
