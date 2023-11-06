@@ -278,18 +278,36 @@ header.sticky{
      }
      .otherdetails{
         height:280px;
-
      }
+     .ham{
+        display: flex;
+        cursor: pointer;
+        font-size: 30px;
+        margin-right: 10px;
+        z-index: 55;
+    }
+
 }
 @media (max-width:480px){
-   .ourdesk .deskbox {
-    
-    display: block;
-   }
+  .ourdesk{
+    width: 100%;
+    height: 100vh;
+  }
    .ourdesk .deskbox{
     display: block;
+}
+    .ourdesk .deskbox .desk{
+        margin:10px;
+    }
     
-   }
+   
+   .ham{
+    display: flex;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 10px;
+    z-index: 55;
+}
 
 }
 
