@@ -55,12 +55,34 @@
              
         </nav>
       
-        <div class="ham">
+        <div class="ham" id="menuicon">
                 <i class="fa-solid fa-bars" onclick="changeIcon(this)"></i>
-        </div> 
+        </div>
+        <div class="openmenu" id="open">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">ADMISSIONS</a></li>
+                <li><a href="#">DEPARTMENTS</a></li>
+                <li><a href="#">FACILITIES</a></li>
+                <li><a href="#">STUDENTS</a></li>
+                <li><a href="#">ALUMNI</a></li>
+                <li><a href="#">ACCREDITATION</a></li>
+                <li><a href="#">T&P CELL</a></li>
+            </ul>
+            
+        </div>   
        
     </header>
     <script>
+
+        let openmenu=document.getElementById("open");
+        let menuicon=document.getElementById("menuicon");
+        menuicon.onclick=function(){
+            openmenu.classList.toggle("menubox");
+        }
+
+
         let icon=document.querySelector(".ham");
         let ul=document.querySelector("ul");
         
