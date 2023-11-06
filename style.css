@@ -143,6 +143,28 @@ header.sticky{
     background: #fff;
     
 }
+.text-box {
+    color:#fff;
+    position: absolute;
+    margin-left:3%;
+    bottom:3%;
+   
+}
+.text-box h1{
+    font-size: 100px;
+    line-height: 90px;
+    color:transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
 .ham{
     display: none;
 }
@@ -157,6 +179,7 @@ header.sticky{
     }
     
 }
+
 @media only screen and (max-width:770px){
     .ourdesk .deskbox{
         gap: 20px;
