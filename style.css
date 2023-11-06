@@ -290,7 +290,7 @@ header.sticky{
     }
 
 }
-@media (max-width:500px){
+@media (max-width:360px){
   .ourdesk{
     width: 100%;
     height: 100vh; 
