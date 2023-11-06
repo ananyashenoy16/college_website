@@ -293,13 +293,13 @@ header.sticky{
 @media (max-width:480px){
   .ourdesk{
     width: 100%;
-    height: 100vh;
-
-        position: relative;
-    
+    height: 100vh; 
   }
+
    .ourdesk .deskbox{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
     .ourdesk .deskbox .desk{
         margin:10px;
