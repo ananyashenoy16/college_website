@@ -242,11 +242,13 @@ header.sticky{
         z-index: 55;
     }
 
+
     
 }
 
 @media  (max-width:770px){
 
+    
     .ourdesk .deskbox{
         gap: 20px;
         margin: 50px;
@@ -292,6 +294,9 @@ header.sticky{
   .ourdesk{
     width: 100%;
     height: 100vh;
+
+        position: relative;
+    
   }
    .ourdesk .deskbox{
     display: block;
@@ -308,6 +313,7 @@ header.sticky{
     margin-right: 10px;
     z-index: 55;
 }
+
 
 }
 
