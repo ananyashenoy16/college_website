@@ -813,7 +813,58 @@ header.sticky {
     color: #383737;
 
 }
+/* Acheivements */
+.achievement {
+    position: sticky;
+    top: 100px;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #39bad7, rgb(198, 223, 236));
+}
 
+.achievement h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+}
+
+.first,
+.second,
+.third {
+    border: 3px solid lightblue;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    padding: 25px;
+    position: absolute;
+    background-color: rgb(251, 246, 246);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.first {
+    z-index: 0;
+    top: 20%;
+    left: 30%;
+    text-align: left;
+}
+
+.second {
+    z-index: 0;
+    top: 30%;
+    left: 40%;
+    text-align: left;
+}
+
+.third {
+    z-index: 0;
+    top: 40%;
+    left: 50%;
+    text-align: left;
+}
 @media (min-width:600px) and (max-width:1040) {
 
     .ourdesk .deskbox {
@@ -862,14 +913,18 @@ header.sticky {
         z-index: 55;
     }
 /* achievements */
-.first{
+.achievement  .achieve .first{
+    left:10%;
+}
+.achievement .achieve .second{
     left:20%;
 }
-.second{
+.achievement .achieve.third {
     left:30%;
 }
-.third {
-    left:40%;
+.achieve{
+    justify-content: center;
+    align-items: center;
 }
 }
 
@@ -882,7 +937,6 @@ header.sticky {
         margin: 0;
         padding: 0;
         overflow-x: hidden;
-        overflow-y: hidden;
     }
 
     header {
@@ -1189,56 +1243,4 @@ header.sticky {
     height: 100%;
     overflow: hidden;
 }
-}
-/* Acheivements */
-.achievement {
-    position: sticky;
-    top: 100px;
-    text-align: center;
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(180deg, #39bad7, rgb(198, 223, 236));
-}
-
-.achievement h1 {
-    font-family: 'PT Serif', serif;
-    font-weight: 700;
-    font-size: 50px;
-    text-align: center;
-}
-
-.first,
-.second,
-.third {
-    border: 3px solid lightblue;
-    height: 400px;
-    width: 400px;
-    text-align: center;
-    padding: 25px;
-    position: absolute;
-    background-color: rgb(251, 246, 246);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
-}
-
-.first {
-    z-index: 0;
-    top: 20%;
-    left: 30%;
-    text-align: left;
-}
-
-.second {
-    z-index: 0;
-    top: 30%;
-    left: 40%;
-    text-align: left;
-}
-
-.third {
-    z-index: 0;
-    top: 40%;
-    left: 50%;
-    text-align: left;
 }
