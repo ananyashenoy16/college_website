@@ -915,7 +915,7 @@ header.sticky {
     }
 }
 
-@media (min-width:300px) and (max-width:600px) {
+@media (min-width:270px) and (max-width:610px) {
 
     html,
     body {
