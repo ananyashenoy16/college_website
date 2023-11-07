@@ -962,15 +962,15 @@ header.sticky {
     .text-box {
         color: #fff;
         position: absolute;
-        margin-left: 20%;
+        margin-left: 180px;
         bottom: 3%;
 
     }
 
     .text-box h1 {
-        font-size: 40px;
+        font-size: 50px;
         line-height: 50px;
-        text-align: center;
+        text-align: right;
         color: transparent;
         -webkit-text-stroke: 1px #fff;
         background: url(back.png);
@@ -1280,6 +1280,8 @@ header.sticky {
     }
 
     .first {
+        width: 300px;
+        height: 320px;
         z-index: 0;
         top: 20%;
         left: 10%;
@@ -1287,6 +1289,8 @@ header.sticky {
     }
 
     .second {
+        width: 300px;
+        height: 320px;
         z-index: 0;
         top: 30%;
         left: 20%;
@@ -1294,6 +1298,8 @@ header.sticky {
     }
 
     .third {
+        width: 300px;
+        height: 320px;
         z-index: 0;
         top: 40%;
         left: 30%;
