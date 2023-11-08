@@ -18,11 +18,11 @@
 let loadMoreBtn =document.querySelector('#load-more');
         let currentItem=3;
     
-    function loadmore(x){
+    function loadmore(){
         let boxes=[...document.querySelectorAll('.contain .card-list .card')];
         for(let i=currentItem ;i< currentItem + 4 ;i++){
             boxes[i].style.display = 'inline-block';
-            x.disable=true;
+           
         }
         currentItem += 3;
         
