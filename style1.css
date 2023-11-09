@@ -546,7 +546,7 @@ body {
   
   .card .img {
     align-items: center;
-    width: 380px;
+    width: 250px;
     border: 30px black;
     border-radius: 10px;
     display: block;
@@ -1341,6 +1341,30 @@ body {
     text-align: left;
   }
 
+  @media (max-width:640px){
+    
+  .first {
+    z-index: 0;
+    top: 10%;
+    left: 10%;
+    text-align: left;
+  }
+  
+  .second {
+    z-index: 0;
+    top: 20%;
+    left: 20%;
+    text-align: left;
+  }
+  
+  .third {
+    z-index: 0;
+    top: 30%;
+    left: 30%;
+    text-align: left;
+  }
+  }
+
   @media (max-width: 550px) {
     .first,
     .second,
@@ -1395,7 +1419,7 @@ body {
       width: 100vw;
     }
     .otherdetails > .details {
-      width: 400px;
+      width: 100vw;
       padding: 0;
     }
     .otherdetails > .details > h1 {
@@ -1570,6 +1594,13 @@ body {
         font-family: "PT Serif", serif;
         font-weight: 700;
         font-size: 60px;
+      }
+     }
+
+     @media (max-width:420px){
+      body{
+        width: 100vw;
+        height: 100vh;
       }
      }
  
